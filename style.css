@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.secondary-text {
+    color: hsl(228, 34%, 66%);
+}
+
 .subhead {
     text-transform: uppercase;
     font-weight: 200;
@@ -50,7 +54,11 @@
     height: 4px;
     background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     position: absolute;
-    top: 0em;
+    top: 0;
+}
+
+.instacard {
+    padding-top: 34px !important;
 }
 
 .yt {
@@ -65,6 +73,12 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+}
+
+.container header .toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container header div p {
@@ -94,6 +108,7 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    transition: ease-in-out 0.2s;
 }
 
 .container .card svg {
@@ -107,7 +122,7 @@
 
 .container .card:hover {
     background: hsl(228, 28%, 25%);
-    box-shadow: black;
+    box-shadow: 0 3px 10px hsl(228, 28%, 13%);
 }
 
 
