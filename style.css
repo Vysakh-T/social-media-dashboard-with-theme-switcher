@@ -6,7 +6,9 @@
 
 .subhead {
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
 }
 
 .body-dark {
@@ -44,8 +46,11 @@
 }
 
 .insta {
-    border-top: 4px solid;
-    border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    position: absolute;
+    top: 0em;
 }
 
 .yt {
@@ -86,6 +91,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .container .card svg {
@@ -94,7 +102,12 @@
 
 .container .main .card h1 {
     font-size: 3em;
-    padding-top: 15px;
+    padding-top: 20px;
+}
+
+.container .card:hover {
+    background: hsl(228, 28%, 25%);
+    box-shadow: black;
 }
 
 
