@@ -145,20 +145,39 @@
 .container .overview .overview-inner {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 30px;
 }
 
 .container .overview .overview-inner .tab {
     background: hsl(228, 28%, 20%);
     width: auto;
     height: auto;
-    padding: 20px;
+    padding: 20px 20px 15px 20px;
     border-radius: 5px;
 }
 
 .container .overview .overview-inner .tab:hover {
     background: hsl(228, 28%, 25%);
     box-shadow: 0 3px 10px hsl(228, 28%, 13%);
+}
+
+.container .overview .overview-inner .tab .tab-flex {
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    gap: 15px;
+}
+
+.container .overview .overview-inner .tab .tab-flex .tab-inner-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .overview .overview-inner .tab .stat-green svg {
+    margin-right: 4px;
+}
+
+.container .overview .overview-inner .tab .stat-red svg {
+    margin-right: 4px;
 }
 
 
