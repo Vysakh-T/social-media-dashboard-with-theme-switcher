@@ -125,6 +125,42 @@
     box-shadow: 0 3px 10px hsl(228, 28%, 13%);
 }
 
+.container .overview {
+    margin: 40px 0;
+}
+
+.container .overview h2 {
+    margin-bottom: 20px;
+}
+
+.container .overview p {
+    color: hsl(228, 34%, 66%);
+    font-weight: bold;
+}
+
+.container .overview h1 {
+    font-size: x-large;
+}
+
+.container .overview .overview-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.container .overview .overview-inner .tab {
+    background: hsl(228, 28%, 20%);
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.container .overview .overview-inner .tab:hover {
+    background: hsl(228, 28%, 25%);
+    box-shadow: 0 3px 10px hsl(228, 28%, 13%);
+}
+
 
 /* Footer */
 
