@@ -204,6 +204,7 @@ input:checked+label:after {
     height: auto;
     padding: 20px 20px 16px 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .container .overview .overview-inner .tab:hover {
