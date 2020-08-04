@@ -161,8 +161,17 @@ input:checked+label:after {
     transition: ease-in-out 0.2s;
 }
 
+.container .card .card-header {
+    display: flex;
+    align-items: center;
+}
+
 .container .card svg {
     margin-right: 4px;
+}
+
+.container .card .card-header svg {
+    margin-right: 6px;
 }
 
 .container .main .card h1 {
