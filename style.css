@@ -149,7 +149,7 @@ input:checked+label:after {
     background: hsl(228, 28%, 20%);
     width: auto;
     height: auto;
-    padding: 30px 30%;
+    padding: 10% 10%;
     border-radius: 5px;
     text-align: center;
     display: flex;
@@ -281,5 +281,30 @@ input:checked+label:after {
     }
     .container .overview .overview-inner {
         grid-template-columns: 1fr;
+    }
+    .container header {
+        display: block;
+    }
+    .container div:nth-child(1) {
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .container header h1 {
+        padding: 0;
+        margin: 0;
+        font-size: x-large;
+    }
+    .container header p {
+        font-weight: bold;
+        margin-top: 2px;
+    }
+    .container header p:after {
+        background: hsl(228, 28%, 90%);
+        content: '';
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
     }
 }
