@@ -5,7 +5,7 @@
 }
 
 .secondary-text {
-    color: hsl(228, 34%, 66%);
+    color: hsl(228, 34%, 66%) !important;
 }
 
 .subhead {
@@ -131,6 +131,11 @@ input:checked+label:after {
     align-items: center;
 }
 
+.container header .toggle h5:hover {
+    color: white !important;
+    cursor: default;
+}
+
 .container header div p {
     padding-top: 2px;
 }
@@ -149,7 +154,7 @@ input:checked+label:after {
     background: hsl(228, 28%, 20%);
     width: auto;
     height: auto;
-    padding: 10% 10%;
+    padding: 30px 30%;
     border-radius: 5px;
     text-align: center;
     display: flex;
@@ -299,12 +304,30 @@ input:checked+label:after {
         margin-top: 2px;
     }
     .container header p:after {
-        background: hsl(228, 28%, 90%);
+        background: hsl(228, 28%, 60%);
         content: '';
-        height: 1px;
+        height: 0.5px;
         width: 100%;
         position: absolute;
         bottom: -15px;
         left: 0;
+    }
+    .insta {
+        width: 300%;
+    }
+    .instacard {
+        padding-top: 0 !important;
+    }
+    .container .overview .overview-inner .tab {
+        padding-bottom: 0;
+        padding-top: 28px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .container .main .card h1 {
+        padding-top: 0;
+    }
+    .instacard h1 {
+        padding-top: 30px !important;
     }
 }
