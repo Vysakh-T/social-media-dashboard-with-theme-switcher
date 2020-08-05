@@ -138,6 +138,7 @@ input:checked+label:after {
 
 .container header div p {
     padding-top: 2px;
+    font-weight: bold;
 }
 
 .container p {

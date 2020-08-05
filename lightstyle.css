@@ -5,7 +5,7 @@
 }
 
 .secondary-text {
-    color: hsl(228, 34%, 66%) !important;
+    color: hsl(228, 12%, 44%) !important;
 }
 
 .subhead {
@@ -16,8 +16,8 @@
 }
 
 .body-dark {
-    background: hsl(230, 17%, 14%);
-    color: white;
+    background: hsl(0, 0%, 100%);
+    color: hsl(230, 17%, 14%);
 }
 
 .pattern-dark {
@@ -25,13 +25,13 @@
     top: 0em;
     width: 100%;
     height: 40%;
-    background: hsl(232, 19%, 15%);
+    background: hsl(225, 100%, 98%);
     border-radius: 0 0 3vh 3vh;
     z-index: -1;
 }
 
 header h5 {
-    color: white !important;
+    color: hsl(230, 17%, 14%) !important;
 }
 
 
@@ -132,12 +132,13 @@ input:checked+label:after {
 }
 
 .container header .toggle h5:hover {
-    color: white !important;
+    color: hsl(230, 17%, 14%) !important;
     cursor: default;
 }
 
 .container header div p {
     padding-top: 2px;
+    font-weight: bold;
 }
 
 .container p {
@@ -151,7 +152,7 @@ input:checked+label:after {
 }
 
 .container .card {
-    background: hsl(228, 28%, 20%);
+    background: hsl(227, 47%, 96%);
     width: auto;
     height: auto;
     padding: 30px 30%;
@@ -185,8 +186,8 @@ input:checked+label:after {
 }
 
 .container .card:hover {
-    background: hsl(228, 28%, 25%);
-    box-shadow: 0 3px 10px hsl(228, 28%, 13%);
+    background: hsl(227, 47%, 92%);
+    box-shadow: 0 3px 10px hsl(227, 47%, 96%);
 }
 
 .container .overview {
@@ -198,7 +199,7 @@ input:checked+label:after {
 }
 
 .container .overview p {
-    color: hsl(228, 34%, 66%);
+    color: hsl(228, 12%, 44%);
     font-weight: bold;
 }
 
@@ -213,7 +214,7 @@ input:checked+label:after {
 }
 
 .container .overview .overview-inner .tab {
-    background: hsl(228, 28%, 20%);
+    background: hsl(227, 47%, 96%);
     width: auto;
     height: auto;
     padding: 20px 20px 16px 20px;
@@ -222,8 +223,8 @@ input:checked+label:after {
 }
 
 .container .overview .overview-inner .tab:hover {
-    background: hsl(228, 28%, 25%);
-    box-shadow: 0 3px 10px hsl(228, 28%, 13%);
+    background: hsl(227, 47%, 92%);
+    box-shadow: 0 3px 10px hsl(227, 47%, 96%);
 }
 
 .container .overview .overview-inner .tab .tab-flex {
