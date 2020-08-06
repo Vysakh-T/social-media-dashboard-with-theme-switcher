@@ -4,8 +4,28 @@
     padding: 0;
 }
 
+html {
+    --secondary-text: hsl(228, 34%, 66%);
+    --white-c-black: white;
+    --pattern-color: hsl(232, 19%, 15%);
+    --background-color: hsl(230, 17%, 14%);
+    --card-bg: hsl(228, 28%, 20%);
+    --card-hover: hsl(228, 28%, 25%);
+    --card-hover-shadow: hsl(228, 28%, 13%);
+}
+
+html[data-theme="light"] {
+    --secondary-text: hsl(228, 12%, 44%);
+    --white-c-black: hsl(230, 17%, 14%);
+    --pattern-color: hsl(225, 100%, 98%);
+    --background-color: hsl(0, 0%, 100%);
+    --card-bg: hsl(227, 47%, 96%);
+    --card-hover: hsl(227, 47%, 92%);
+    --card-hover-shadow: hsl(227, 47%, 96%);
+}
+
 .secondary-text {
-    color: hsl(228, 34%, 66%) !important;
+    color: var(--secondary-text) !important;
 }
 
 .subhead {
@@ -16,8 +36,8 @@
 }
 
 .body-dark {
-    background: hsl(230, 17%, 14%);
-    color: white;
+    background: var(--background-color);
+    color: var(--white-c-black);
 }
 
 .pattern-dark {
@@ -25,13 +45,13 @@
     top: 0em;
     width: 100%;
     height: 40%;
-    background: hsl(232, 19%, 15%);
+    background: var(--pattern-color);
     border-radius: 0 0 3vh 3vh;
     z-index: -1;
 }
 
 header h5 {
-    color: white !important;
+    color: var(--white-c-black) !important;
 }
 
 
@@ -132,7 +152,7 @@ input:checked+label:after {
 }
 
 .container header .toggle h5:hover {
-    color: white !important;
+    color: var(--white-c-black) !important;
     cursor: default;
 }
 
@@ -142,7 +162,7 @@ input:checked+label:after {
 }
 
 .container p {
-    color: hsl(228, 34%, 66%);
+    color: var(--secondary-text);
 }
 
 .container .main {
@@ -152,7 +172,7 @@ input:checked+label:after {
 }
 
 .container .card {
-    background: hsl(228, 28%, 20%);
+    background: var(--card-bg);
     width: auto;
     height: auto;
     padding: 30px 30%;
@@ -186,8 +206,8 @@ input:checked+label:after {
 }
 
 .container .card:hover {
-    background: hsl(228, 28%, 25%);
-    box-shadow: 0 3px 10px hsl(228, 28%, 13%);
+    background: var(--card-hover);
+    box-shadow: 0 3px 10px var(--card-hover-shadow);
 }
 
 .container .overview {
@@ -199,7 +219,7 @@ input:checked+label:after {
 }
 
 .container .overview p {
-    color: hsl(228, 34%, 66%);
+    color: var(--secondary-text);
     font-weight: bold;
 }
 
@@ -214,7 +234,7 @@ input:checked+label:after {
 }
 
 .container .overview .overview-inner .tab {
-    background: hsl(228, 28%, 20%);
+    background: var(--card-bg);
     width: auto;
     height: auto;
     padding: 20px 20px 16px 20px;
@@ -223,8 +243,8 @@ input:checked+label:after {
 }
 
 .container .overview .overview-inner .tab:hover {
-    background: hsl(228, 28%, 25%);
-    box-shadow: 0 3px 10px hsl(228, 28%, 13%);
+    background: var(--card-hover);
+    box-shadow: 0 3px 10px var(--card-hover-shadow);
 }
 
 .container .overview .overview-inner .tab .tab-flex {
