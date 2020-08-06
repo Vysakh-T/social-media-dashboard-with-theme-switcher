@@ -240,6 +240,7 @@ input:checked+label:after {
     padding: 20px 20px 16px 20px;
     border-radius: 5px;
     cursor: pointer;
+    transition: ease-in-out 0.2s;
 }
 
 .container .overview .overview-inner .tab:hover {
@@ -351,4 +352,12 @@ input:checked+label:after {
     .instacard h1 {
         padding-top: 30px !important;
     }
+}
+
+html .transition,
+html .transition *,
+html .transition * :before,
+html .transition * :after {
+    transition: all 0.2s ease-in-out !important;
+    /* transition-delay: 0 !important; */
 }
